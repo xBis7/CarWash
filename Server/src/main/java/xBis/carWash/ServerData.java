@@ -95,10 +95,9 @@ public class ServerData {
      * calling ClientHandler class
      */
     public void receiveInfo(){       
-        ServerSocket sSocket = null;
+        
     
-        try{
-            sSocket=new ServerSocket(8000);
+        try (ServerSocket sSocket = new ServerSocket(8000)) {
             //establish connection to client socket
             sSocket.setReuseAddress(true);
                 
@@ -113,15 +112,7 @@ public class ServerData {
         catch(IOException e){
             e.printStackTrace();
         }
-        finally{
-            if(sSocket != null){
-                try {
-                    sSocket.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+        
     }
 
 }

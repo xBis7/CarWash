@@ -5,3 +5,45 @@ Vehicle: SUV
 Price: 14
 Check In Date Time: 28/07/2021 01:06:43
 Check Out Date Time: 28/07/2021 01:06:46
+
+plate: YGB
+Service: Exterior Washing
+Vehicle: Sedan
+Price: 7
+Check In Date Time: 28/07/2021 13:53:41
+Check Out Date Time: 28/07/2021 13:55:02
+
+plate: RT5
+Service: Interior + Exterior
+Vehicle: SUV
+Price: 14
+Check In Date Time: 28/07/2021 13:55:50
+Check Out Date Time: 28/07/2021 13:56:07
+
+plate: IJ
+Service: Exterior Washing
+Vehicle: Motorcycle
+Price: 6
+Check In Date Time: 28/07/2021 14:12:13
+Check Out Date Time: 28/07/2021 14:12:36
+
+plate: UH6
+Service: Exterior Washing
+Vehicle: Motorcycle
+Price: 6
+Check In Date Time: 28/07/2021 15:13:16
+Check Out Date Time: 28/07/2021 15:13:30
+
+plate: CV 34
+Service: Exterior Washing
+Vehicle: Motorcycle
+Price: 6
+Check In Date Time: 29/07/2021 16:20:31
+Check Out Date Time: 29/07/2021 16:25:03
+
+plate: PO 90
+Service: Exterior Washing
+Vehicle: Sedan
+Price: 7
+Check In Date Time: 29/07/2021 16:23:18
+Check Out Date Time: 29/07/2021 16:25:36

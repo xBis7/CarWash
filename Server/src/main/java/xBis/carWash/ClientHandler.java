@@ -20,11 +20,9 @@ public class ClientHandler implements Runnable {
      * getting values sent from client and passing those values to the ServerData class variables
      */
     public void run() {
-        DataInputStream inputStream = null;
     
-        try {
+        try (DataInputStream inputStream = new DataInputStream(clientSocket.getInputStream())) {
             
-            inputStream = new DataInputStream(clientSocket.getInputStream());
             String plate=(String)inputStream.readUTF(); 
             String serviceType=(String)inputStream.readUTF(); 
             String vehicle=(String)inputStream.readUTF();
@@ -55,22 +53,14 @@ public class ClientHandler implements Runnable {
 
             //putting the thread on hold for small amount of millisecs to avoid too much traffic
             Thread.sleep(1000);
+
+            clientSocket.close();
         
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally{
-            try {
-                if(inputStream != null){
-                    inputStream.close();
-                    clientSocket.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }  
-        
+            e.printStackTrace();  
+        }
     }
     
 }

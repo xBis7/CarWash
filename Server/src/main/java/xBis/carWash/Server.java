@@ -8,6 +8,9 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Cell;
+import javafx.scene.control.Labeled;
+import javafx.scene.control.TableCell;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -16,6 +19,7 @@ import javafx.scene.layout.RowConstraints;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import javafx.util.Callback;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.Alert.AlertType;
@@ -91,6 +95,16 @@ import java.util.Date;
                 tableView.getColumns().add(column4);
                 tableView.getColumns().add(column5);
 
+                //column text alignment
+                column1.setStyle( "-fx-alignment: CENTER;");
+                column2.setStyle( "-fx-alignment: CENTER;");
+                column3.setStyle( "-fx-alignment: CENTER;");
+                column4.setStyle( "-fx-alignment: CENTER;");
+                column5.setStyle( "-fx-alignment: CENTER;");
+
+                //make columns occupy all table space
+                tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+ 
                 //create a new thread to receive data from client while the GUI is running
                 new Thread(){
                     public void run(){
