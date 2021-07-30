@@ -1,6 +1,6 @@
 # CarWash
 
-A client-server app created for a Car Wash. 
+A client-server app created for a Car Wash. The client and the server apps were created with Java Maven. The code was written and edited with Visual Studio Code.
 
 There are two computers, one in the front desk to be used by the customers(client) and one in the cashe to be used by the employee(server). 
 
@@ -34,7 +34,7 @@ the customer chooses a service and the vehicle type
 
 ![client6](https://user-images.githubusercontent.com/74301312/127504997-b0d6e5ce-e657-4c73-8891-1c066ae3be89.PNG)
 
-if the info is submitted a confirmation dialog pops up
+if the info is submitted a confirmation dialog pops up, the window closes and a new licence plate window opens
 
 ![client7](https://user-images.githubusercontent.com/74301312/127505052-d2fed805-e773-45e3-905e-d86b81529fba.PNG)
 
